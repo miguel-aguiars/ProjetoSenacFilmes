@@ -5,6 +5,10 @@
   text-align: center;
 }
 
-
+.secaoFilmes{
+  display: flex;
+  gap: 1rem;
+  
+}
 
 

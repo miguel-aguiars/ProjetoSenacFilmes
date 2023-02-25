@@ -1,11 +1,16 @@
-export default function CardFilme() {
+import './CardFilme.css'
+
+export default function CardFilme(props) {
 
     return (
         <div className='CardFilme'>
-            <h2>Titanic</h2>
-            <span>9.8</span>
+            <img src={props.filme.poster} alt="Poster do filme" />
+            <h3>{props.filme.titulo}</h3>
+            <span>{props.filme.nota}</span>
         </div>
 
     )
 
 }
+
+//{} é utilizado para chamar códigos javascript dentro do jsx
